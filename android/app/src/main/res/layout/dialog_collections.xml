@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/surface_paper_card"
+    android:padding="@dimen/dialog_padding">
+
+    <TextView
+        android:id="@+id/collections_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:letterSpacing="0.2"
+        android:text="@string/dialog_collections_title"
+        android:textAppearance="@style/TextAppearance.App.LabelWide"
+        android:textColor="@color/herb_green_deep" />
+
+    <View
+        android:id="@+id/collections_rule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hairline"
+        android:layout_below="@id/collections_title"
+        android:layout_marginTop="12dp"
+        android:background="@color/herb_hairline"
+        android:importantForAccessibility="no" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collections_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/collections_rule"
+        android:layout_marginTop="6dp"
+        android:overScrollMode="never" />
+
+    <View
+        android:id="@+id/collections_footer_rule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hairline"
+        android:layout_below="@id/collections_list"
+        android:layout_marginTop="6dp"
+        android:background="@color/herb_hairline"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:id="@+id/collections_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/secondary_height"
+        android:layout_below="@id/collections_footer_rule"
+        android:layout_marginTop="14dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/collections_new"
+            style="@style/Widget.App.Button.Secondary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btn_new_collection"
+            app:icon="@drawable/ic_collection" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/collections_close"
+            style="@style/Widget.App.Button.Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/btn_close" />
+
+    </LinearLayout>
+
+</RelativeLayout>

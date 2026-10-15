@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/herb_paper_card" />
+    <corners android:radius="@dimen/card_radius_small" />
+    <stroke
+        android:width="@dimen/hairline"
+        android:color="@color/herb_green_primary"
+        android:dashWidth="6dp"
+        android:dashGap="4dp" />
+</shape>

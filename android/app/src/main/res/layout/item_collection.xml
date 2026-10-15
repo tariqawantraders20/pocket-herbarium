@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_primary"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/touch_min"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/collection_sprite"
+        android:layout_width="@dimen/collection_sprite"
+        android:layout_height="@dimen/collection_sprite"
+        android:contentDescription="@string/cd_collection_icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_watering_can" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/collection_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/collection_underline"
+            android:layout_width="48dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/marker_ribbon"
+            android:importantForAccessibility="no"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/collection_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/count_chip"
+        android:minWidth="34dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/herb_ink_soft" />
+
+</LinearLayout>

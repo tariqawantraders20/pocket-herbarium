@@ -1,0 +1,64 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, one single glossy 3D pressed green leaf with a thin warm yellow highlight along the midrib, centered, cream to sage radial gradient background, crisp edges, soft drop shadow, no text, no scene"
+    },
+    {
+      "name": "bg_splash",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, dark botanical foliage wall, deep forest green, soft shadows, low contrast, cinematic, no text, no UI elements"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, pale herbarium paper sheet with faint pressed leaf impressions and fibre texture, cream white and sage, airy, soft daylight, no text, no UI elements"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, soft blurred cream botanical paper, very low contrast for UI overlay, pale sage tint, no text, no UI elements"
+    },
+    {
+      "name": "sprite_leaf_oval",
+      "type": "sprite",
+      "prompt": "One single cute botanical oval sage leaf, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_leaf_lobed",
+      "type": "sprite",
+      "prompt": "One single lobed oak leaf, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_leaf_needle",
+      "type": "sprite",
+      "prompt": "One single pine needle sprig, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_fern_frond",
+      "type": "sprite",
+      "prompt": "One single fern frond, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_succulent",
+      "type": "sprite",
+      "prompt": "One single small jade succulent rosette, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_flower_bud",
+      "type": "sprite",
+      "prompt": "One single yellow marsh flower bud, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_press_book",
+      "type": "sprite",
+      "prompt": "One single closed herbarium press book with a pressed leaf on the cover, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_watering_can",
+      "type": "sprite",
+      "prompt": "One single small green watering can, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    }
+  ]
+}

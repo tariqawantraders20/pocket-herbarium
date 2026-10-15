@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <ImageView
+        android:id="@+id/splash_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.28"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim_splash"
+        android:importantForAccessibility="no" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/gutter"
+        android:paddingTop="@dimen/status_bar_pad"
+        android:paddingEnd="@dimen/gutter"
+        android:paddingBottom="@dimen/root_bottom_pad">
+
+        <ImageView
+            android:id="@+id/splash_leaf_left"
+            android:layout_width="@dimen/splash_decor"
+            android:layout_height="@dimen/splash_decor"
+            android:layout_marginStart="8dp"
+            android:alpha="0.22"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_leaf_oval"
+            app:layout_constraintBottom_toTopOf="@id/splash_plate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <ImageView
+            android:id="@+id/splash_leaf_right"
+            android:layout_width="@dimen/splash_decor"
+            android:layout_height="@dimen/splash_decor"
+            android:layout_marginEnd="8dp"
+            android:alpha="0.22"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_fern_frond"
+            app:layout_constraintBottom_toTopOf="@id/splash_plate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/splash_plate"
+            android:layout_width="@dimen/splash_plate"
+            android:layout_height="@dimen/splash_plate"
+            app:cardBackgroundColor="@color/herb_splash_card"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.30"
+            app:strokeColor="@color/herb_splash_stroke"
+            app:strokeWidth="@dimen/hairline">
+
+            <ImageView
+                android:id="@+id/splash_press_book"
+                android:layout_width="@dimen/splash_sprite"
+                android:layout_height="@dimen/splash_sprite"
+                android:layout_gravity="center"
+                android:contentDescription="@string/cd_press_book"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_press_book" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/splash_title_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:letterSpacing="0.06"
+            android:shadowColor="#4D000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:text="@string/splash_title_top"
+            android:textAppearance="@style/TextAppearance.App.Display"
+            android:textColor="@color/herb_title_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/splash_plate" />
+
+        <TextView
+            android:id="@+id/splash_title_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.06"
+            android:shadowColor="#4D000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:text="@string/splash_title_bottom"
+            android:textAppearance="@style/TextAppearance.App.Display"
+            android:textColor="@color/herb_title_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/splash_title_top" />
+
+        <TextView
+            android:id="@+id/splash_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="@string/splash_subtitle"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textColor="@color/herb_green_soft"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/splash_title_bottom" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/splash_indicator"
+            android:layout_width="@dimen/indicator_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:indeterminate="true"
+            app:indicatorColor="@color/herb_marker"
+            app:layout_constraintBottom_toTopOf="@id/splash_caption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:trackColor="@color/herb_track_light"
+            app:trackCornerRadius="2dp"
+            app:trackThickness="3dp" />
+
+        <TextView
+            android:id="@+id/splash_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.18"
+            android:text="@string/splash_caption"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textColor="@color/herb_caption_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

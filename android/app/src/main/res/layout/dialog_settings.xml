@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/surface_paper_card"
+    android:padding="@dimen/dialog_padding">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:letterSpacing="0.2"
+        android:text="@string/dialog_settings_title"
+        android:textAppearance="@style/TextAppearance.App.LabelWide"
+        android:textColor="@color/herb_green_deep" />
+
+    <View
+        android:id="@+id/settings_rule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hairline"
+        android:layout_below="@id/settings_title"
+        android:layout_marginTop="12dp"
+        android:background="@color/herb_hairline"
+        android:importantForAccessibility="no" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/settings_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_rule"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/settings_switch_latin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:minHeight="@dimen/touch_min"
+                android:text="@string/dialog_settings_latin"
+                android:textAppearance="@style/TextAppearance.App.Body"
+                android:textColor="@color/herb_ink" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline"
+                android:layout_marginTop="12dp"
+                android:background="@color/herb_hairline"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/settings_habitat_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/dialog_settings_habitat"
+                android:textAppearance="@style/TextAppearance.App.LabelWide" />
+
+            <com.pocketherbarium.notes.core.ui.TraitChipRowView
+                android:id="@+id/settings_habitat_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline"
+                android:layout_marginTop="14dp"
+                android:background="@color/herb_hairline"
+                android:importantForAccessibility="no" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/settings_switch_marker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="@dimen/touch_min"
+                android:text="@string/dialog_settings_marker"
+                android:textAppearance="@style/TextAppearance.App.Body"
+                android:textColor="@color/herb_ink" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_done"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/secondary_height"
+        android:layout_below="@id/settings_scroll"
+        android:layout_marginTop="18dp"
+        android:text="@string/btn_done" />
+
+</RelativeLayout>

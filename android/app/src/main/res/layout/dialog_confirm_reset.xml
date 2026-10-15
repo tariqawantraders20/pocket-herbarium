@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/surface_paper_card"
+    android:padding="@dimen/dialog_padding">
+
+    <ImageView
+        android:id="@+id/reset_icon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/cd_warning"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_warning" />
+
+    <TextView
+        android:id="@+id/reset_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/reset_icon"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/reset_icon"
+        android:letterSpacing="0.2"
+        android:text="@string/dialog_reset_title"
+        android:textAppearance="@style/TextAppearance.App.LabelWide"
+        android:textColor="@color/herb_terracotta" />
+
+    <View
+        android:id="@+id/reset_rule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hairline"
+        android:layout_below="@id/reset_icon"
+        android:layout_marginTop="14dp"
+        android:background="@color/herb_hairline"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/reset_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset_rule"
+        android:layout_marginTop="14dp"
+        android:text="@string/dialog_reset_body"
+        android:textAppearance="@style/TextAppearance.App.Body" />
+
+    <LinearLayout
+        android:id="@+id/reset_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/secondary_height"
+        android:layout_below="@id/reset_body"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reset_cancel"
+            style="@style/Widget.App.Button.Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btn_cancel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reset_confirm"
+            style="@style/Widget.App.Button.DangerFilled"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/btn_confirm_reset" />
+
+    </LinearLayout>
+
+</RelativeLayout>

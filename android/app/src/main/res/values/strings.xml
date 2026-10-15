@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket Herbarium</string>
+
+    <string name="splash_title_top">POCKET</string>
+    <string name="splash_title_bottom">HERBARIUM</string>
+    <string name="splash_subtitle">A FIELD JOURNAL FOR OBSERVED PLANTS</string>
+    <string name="splash_caption">PRESSING SPECIMENS...</string>
+
+    <string name="menu_eyebrow">FIELD JOURNAL</string>
+    <string name="menu_title_top">POCKET</string>
+    <string name="menu_title_bottom">HERBARIUM</string>
+    <string name="menu_tagline">Press, label and shelve the plants you meet.</string>
+    <string name="menu_hint">CHOOSE TRAITS - ADD A CARE NOTE - FILE IT</string>
+    <string name="menu_cta">START NEW ENTRY</string>
+    <string name="menu_empty_title">NO SPECIMENS FILED YET</string>
+    <string name="menu_empty_body">Your first card opens the shelf.</string>
+    <string name="menu_error_banner">Could not read the shelf. Sample sheet shown.</string>
+
+    <string name="stat_specimens">SPECIMENS</string>
+    <string name="stat_collections">COLLECTIONS</string>
+    <string name="stat_last_entry">LAST ENTRY</string>
+    <string name="stat_in_library">IN LIBRARY</string>
+    <string name="stat_in_collection">IN COLLECTION</string>
+
+    <string name="game_header">NEW SPECIMEN</string>
+    <string name="game_step">STEP 1 OF 1</string>
+    <string name="game_cta">START DRYING</string>
+    <string name="game_name_hint">Specimen name</string>
+    <string name="game_name_helper">40 characters max</string>
+    <string name="game_care_hint">Care note</string>
+    <string name="game_location_hint">Where you found it</string>
+    <string name="game_section_shape">LEAF SHAPE</string>
+    <string name="game_section_colour">LEAF COLOUR</string>
+    <string name="game_section_habitat">HABITAT</string>
+    <string name="game_facts_shape">SHAPE</string>
+    <string name="game_facts_colour">COLOUR</string>
+    <string name="game_facts_spot">SPOT</string>
+
+    <string name="result_header">SPECIMEN FILED</string>
+    <string name="result_cta">RECORD AGAIN</string>
+    <string name="result_hint">FILED UNDER %1$s</string>
+    <string name="result_row_shape">SHAPE</string>
+    <string name="result_row_colour">COLOUR</string>
+    <string name="result_row_habitat">HABITAT</string>
+
+    <string name="btn_menu">MENU</string>
+    <string name="btn_collections">COLLECTIONS</string>
+    <string name="btn_reset">RESET LIBRARY</string>
+    <string name="btn_discard">DISCARD</string>
+    <string name="btn_done">DONE</string>
+    <string name="btn_close">CLOSE</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_confirm_reset">RESET</string>
+    <string name="btn_new_collection">NEW COLLECTION</string>
+
+    <string name="dialog_collections_title">COLLECTIONS</string>
+    <string name="dialog_settings_title">SETTINGS</string>
+    <string name="dialog_settings_latin">Show latin names</string>
+    <string name="dialog_settings_habitat">Default habitat</string>
+    <string name="dialog_settings_marker">Marker ribbon on new cards</string>
+    <string name="dialog_reset_title">RESET LIBRARY?</string>
+    <string name="dialog_reset_body">This clears every filed specimen and restores the sample sheet.</string>
+
+    <string name="default_specimen_name">Unnamed Specimen</string>
+    <string name="default_latin_name">Specimen pressed by hand</string>
+    <string name="default_location">Found: North garden path</string>
+    <string name="new_collection_name">Field Notes</string>
+
+    <string name="trait_oval">OVAL</string>
+    <string name="trait_lobed">LOBED</string>
+    <string name="trait_needle">NEEDLE</string>
+    <string name="trait_frond">FROND</string>
+    <string name="trait_fleshy">FLESHY</string>
+    <string name="trait_bud">BUD</string>
+
+    <string name="colour_sage">Sage</string>
+    <string name="colour_deep">Deep green</string>
+    <string name="colour_pale">Pale green</string>
+    <string name="colour_yellow">Autumn yellow</string>
+    <string name="colour_rust">Rust</string>
+
+    <string name="habitat_windowsill">WINDOWSILL</string>
+    <string name="habitat_woodland">WOODLAND</string>
+    <string name="habitat_pond">POND EDGE</string>
+    <string name="habitat_herbrow">HERB ROW</string>
+
+    <string name="state_selected">selected</string>
+    <string name="state_not_selected">not selected</string>
+    <string name="state_on">on</string>
+    <string name="state_off">off</string>
+    <string name="state_nothing_to_discard">nothing to discard</string>
+
+    <string name="cd_press_book">Herbarium press book</string>
+    <string name="cd_specimen_thumb">Specimen illustration</string>
+    <string name="cd_hero_art">Fern frond illustration</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_preview">Selected specimen preview</string>
+    <string name="cd_plate">Filed specimen illustration</string>
+    <string name="cd_care_icon">Care note</string>
+    <string name="cd_collection_icon">Collection</string>
+    <string name="cd_warning">Warning</string>
+    <string name="cd_colour_sage">Sage</string>
+    <string name="cd_colour_deep">Deep green</string>
+    <string name="cd_colour_pale">Pale green</string>
+    <string name="cd_colour_yellow">Autumn yellow</string>
+    <string name="cd_colour_rust">Rust</string>
+
+    <string name="count_items">%1$d</string>
+    <string name="today_label">today</string>
+    <string name="days_label">%1$dd</string>
+</resources>
